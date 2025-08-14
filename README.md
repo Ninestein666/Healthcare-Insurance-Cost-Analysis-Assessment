@@ -70,7 +70,7 @@ This process involved creating various plots and charts to illustrate the relati
 * Plotly: Used for creating interactive visualizations and dashboards.
 
 ## - Best Practices & Notes
-* for future projects i will avoid using a direct path for my data files and instead i will use.env files and push them to .gitignore to keep sensitive information secure.
+* for future projects i will avoid using a direct path for my data files and instead i will use .env files and push them to .gitignore to keep sensitive information secure.
 
 
 ## Credits 
