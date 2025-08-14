@@ -7,85 +7,71 @@ Healthcare Insurance Cost Analysis Assessment is a comprehensive data analysis t
 
 
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
+* The data set i used was the Healthcare Insurance Dataset by willian oliveira.
+(https://www.kaggle.com/datasets/willianoliveiragibin/healthcare-insurance/data)
+The dataset contains the following information:
+Age: The insured person's age.
+
+Sex: Gender (male or female) of the insured.
+
+BMI (Body Mass Index): A measure of body fat based on height and weight.
+
+Children: The number of dependents covered.
+
+Smoker: Whether the insured is a smoker (yes or no).
+
+Region: The geographic area of coverage.
+
+Charges: The medical insurance costs incurred by the insured person.
 
 
 ## Business Requirements
-* Describe your business requirements
-
+* I wanted to analyse the factors influencing healthcare insurance costs and identify key trends and patterns. Which will help in making informed decisions regarding pricing strategies and risk assessments for insurance providers and future insights.
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+* The hypothesis is that certain demographic and health-related factors significantly influence healthcare insurance costs. To validate this, I have performed statistical analysis and visualisations to identify correlations between these factors and the insurance charges. 
+The analysis revealed that factors such as age, BMI, smoking status, and gender have varying degrees of impact on insurance costs.
+As validated in my Data_visualisation notebook, i have come to these conclusions:
+-Older policy holders tend to have higher insurance charges.
+-Women with higher BMI may face increased insurance costs.
+-Women who smoke may also face higher premiums.
+-Men who don't smoke may have lower insurance costs.
+-Men with lower BMI may have lower insurance costs.
+-From our data we can also say that location and number of children provides inconclusive/low evidence regarding its impact on insurance costs.
 
 ## Project Plan
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+* I collected the raw data from the Healthcare Insurance Dataset by William Oliveira.
+* I then cleaned the raw data to ensure its quality and suitability for analysis.
+* while cleaning the data i found an outlier in the age column, which was significantly higher than the rest of the data. I decided to remove this outlier to prevent it from skewing the analysis. While also checking for duplicates i found initially it seemed to be clear, then after standardising the text data i found some duplicates that were not initially apparent. After making sure all of the data was cleaned and processed without any issues, I proceeded to the visualisation stage.
+This process involved creating various plots and charts to illustrate the relationships between the different factors and insurance charges, ultimately leading to my hypothesis.
 
-## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
 
 ## Analysis techniques used
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+* I used data cleaning to remove outliers and duplicates.to ensure the data provided was accurate and reliable. I also used correlation analysis to see the relationship between factors such as: age, BMI, smokers and insurance charges. i also used featyre engineering to creat new vaiables such as age groups and BMI categories.
+* I structured the analysis techniques in a logical flow, starting with data cleaning, followed by analysing the cleaned data for patterns and insights. If i found any significant patterns, I would then visualise these findings and focus less on data that showed less significance such as number of children and location.
+* I found a few challenges in my project when using AI to help with blocks of code which i left comments in the notebook to visually show why double checking work is nessessary. The AI code used the lowest possible outcomes even though the data wasn't represented in the data set. 
+* I used the following libraries for data analysis: pandas, numpy, matplotlib, seaborn, and plotly. These libraries provided the necessary tools for data manipulation, statistical analysis, and visualisation.
+
 
 ## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
+* All data was handled in accordance with relevant data protection regulations and ethical guidelines. This included anonymising personal information and ensuring that the data was used solely for the purposes of this analysis with no personal identifiable information being exposed.
 
-## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
 
 ## Unfixed Bugs
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+* As being a beginner in data analysis and this being my first project i did have to resort to using AI tools for some blocks of code, which sometimes produced unexpected results. I plan to revisit these sections and improve my understanding of the underlying concepts to fix any issues. As stated earlier, I left comments in the notebook to visually show why double-checking work is necessary.
 
-## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
-
-## Deployment
-### Heroku
-
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
 
 ## Main Data Analysis Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+* Pandas: Used for data manipulation and analysis, particularly for handling data frames.
+* NumPy: Used for numerical operations and handling arrays.
+* Matplotlib: Used for creating static visualizations and plots.
+* Seaborn: Built on top of Matplotlib, used for making statistical graphics and visualizations more attractive and informative.
+* Plotly: Used for creating interactive visualizations and dashboards.
 
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
-### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
-
-
-
-## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+* The project was inspired by the Healthcare Insurance Dataset by William Oliveira, which provided the raw data for analysis.
+* The use of AI tools from ChatGPT helped in generating code snippets and providing explanations for complex concepts.
+* My mentor/tutor from CodeInstitute provided guidance and support throughout the project. Thank you Vasi!
