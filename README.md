@@ -78,3 +78,18 @@ This process involved creating various plots and charts to illustrate the relati
 * The project was inspired by the Healthcare Insurance Dataset by William Oliveira, which provided the raw data for analysis.
 * The use of AI tools from ChatGPT helped in generating code snippets and providing explanations for complex concepts.
 * My mentor/tutor from CodeInstitute provided guidance and support throughout the project. Thank you Vasi!
+
+
+## Project Review and Conclusion
+* From this dataset, I was able to identify that Age, BMI and Smoking will significantly raise the cost of insurance. Number of children nudges costs up. Region and sex have comparatively small effects. Charges in this sample range from very low (around 1–3k) to very high (40–65k), with smokers and high-BMI, older members clustering in the top end.
+
+* In the future i would like to use data that includes more diverse demographics and a wider range of health conditions to gain a more comprehensive understanding of the factors influencing insurance costs such as pre-existing conditions, such as diabetes and heart disease. Another factor when concluding my findings could be that the smokers are self reported so their accuracy may be questionable.
+
+* If i presented this data to stakeholders, i would highlight 4 main groups:
+  1. Low Risk - £1,000 - £5,000 - non-smokers, healthy BMI, age range 18-35
+  2. Medium Risk - £5,000 - £15,000 - non-smokers, higher BMI, age range 35-55
+  3. High Risk - £15,000 - £30,000 - smokers, high BMI, age range 45-65
+  4. Very High Risk - £30,000+ - smokers, overweight BMI, age range 35-65
+
+
+* From my conclusion, This project successfully transformed a raw health insurance dataset into clear, actionable insights by applying a structured ETL process, careful data cleaning, and focused exploratory analysis. The findings highlight smoking status, age, and BMI as the most influential drivers of healthcare charges, while also revealing the limited impact of region and number of children. The visualisations effectively communicate these relationships, making the data accessible and understandable for stakeholders. The project demonstrates the value of data-driven decision-making in healthcare insurance, providing a solid foundation for future analyses and strategic planning.
